@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NAQI</title>
+    <link rel="icon" type="image/png" href="images/LOGO.png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* =========================
+           Contact Section Specific Styles
+        ========================= */
+        .contact-subtitle {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            color: var(--emerald);
+        }
+
+        /* Contact Cards Container */
+        .contact-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        /* Contact Card */
+        .contact-card {
+            background: white;
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            padding: 2rem;
+            flex: 1 1 250px;
+            max-width: 300px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            word-break: break-word;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Icon Styling */
+        .contact-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+            transition: transform 0.3s;
+        }
+
+        .contact-card:hover .icon {
+            transform: rotate(15deg) scale(1.2);
+        }
+
+        /* Card Heading */
+        .contact-card h3 {
+            margin-bottom: 1rem;
+            color: var(--emerald);
+        }
+
+        /* Card Paragraph */
+        .contact-card p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* CTA Buttons */
+        .contact-cta {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--emerald);
+            padding: 0.5rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            word-break: break-word;
+        }
+
+        .contact-cta:hover {
+            background-color: var(--emerald);
+            color: var(--gold);
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .contact-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="container">
+        <a class="logo" href="index.html">
+            <img src="images/logo-NAQI.png" alt="NAQI">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="enrollment.html">Enrollment</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p class="contact-subtitle">We would love to hear from you! Reach out via email or phone.</p>
+        <div class="contact-cards">
+            <!-- Email Card -->
+            <div class="contact-card">
+                <div class="icon">📧</div>
+                <h3>Email Us</h3>
+                <p>
+                    <a href="mailto:noor.alquran.institute.usa@gmail.com" class="contact-cta">
+                        noor.alquran.institute.usa@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card">
+                <div class="icon">📞</div>
+                <h3>Call Us</h3>
+                <p>
+                    <a href="tel:+16124946469" class="contact-cta">
+                        +1 (612) 494-6469
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <p><strong>Noor Al-Qur'an Institute (NAQI)</strong></p>
+        <p>Teaching the Qur'an with Mastery</p>
+        <p>© 2026 Noor Al-Qur'an Institute</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+/* =========================
+   NAQI Website Styles (Full)
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gold: #C9A24D;
+    --emerald: #2F4F3E;
+    --cream: #F7F2EA;
+    --olive: #6F7F63;
+    --charcoal: #2B2B2B;
+    --soft-gold: #E5C77A;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: var(--charcoal);
+    background-color: var(--cream);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+    background-color: var(--emerald);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    background: rgba(247, 242, 234, 0.92);
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 85px;
+    width: auto;
+    object-fit: contain;
+    transform: scale(1.25);
+    transform-origin: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--cream);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+    background: linear-gradient(135deg, var(--emerald), #1a2e24);
+    color: var(--cream);
+    min-height: 100vh;
+    padding: calc(70px + 2rem) 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: var(--soft-gold);
+}
+
+.hero p {
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--emerald);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 2px solid var(--gold);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: var(--gold);
+}
+
+/* =========================
+   Sections
+========================= */
+section {
+    padding: 4rem 2rem;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--emerald);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+   About Section
+========================= */
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.highlight-box {
+    background: white;
+    border-left: 4px solid var(--gold);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    line-height: 1.6;
+}
+
+/* =========================
+   Curriculum Section
+========================= */
+.tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.track-card {
+    background: white;
+    border: 2px solid var(--gold);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.track-card h3 {
+    border-bottom: 2px solid var(--soft-gold);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.track-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.track-card li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.track-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+}
+
+/* =========================
+   Pricing Section
+========================= */
+.pricing-table {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    border: 2px solid var(--gold);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--soft-gold);
+    text-align: left;
+}
+
+th {
+    background: var(--emerald);
+    color: var(--cream);
+}
+
+/* =========================
+   Enrollment Section
+========================= */
+.cta-center {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.enrollment-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step {
+    background: white;
+    border: 2px solid var(--gold);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    background-color: var(--gold);
+    color: var(--emerald);
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: default;
+}
+
+.step-number-link .step-number {
+    cursor: pointer;
+}
+
+.step-number-link .step-number:hover {
+    transform: scale(1.2) rotate(15deg);
+}
+
+.step h4 {
+    margin-bottom: 0.5rem;
+    color: var(--emerald);
+}
+
+.step p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* =========================
+   Contact Section
+========================= */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-card {
+    background: white;
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    padding: 2rem;
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    word-break: break-word;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.contact-card .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--gold);
+    transition: transform 0.3s;
+}
+
+.contact-card:hover .icon {
+    transform: rotate(15deg) scale(1.2);
+}
+
+.contact-card h3 {
+    margin-bottom: 1rem;
+    color: var(--emerald);
+}
+
+.contact-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.contact-cta {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--emerald);
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.contact-cta:hover {
+    background-color: var(--emerald);
+    color: var(--gold);
+    transform: scale(1.05);
+}
+.contact-subtitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem; /* slightly larger for emphasis */
+    margin-bottom: 2rem;
+    color: var(--emerald); /* optional: makes it match the theme */
+}
+
+
+/* =========================
+   Footer
+========================= */
+footer {
+    width: 100%;
+    background: var(--emerald);
+    color: var(--cream);
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 5px solid var(--gold);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav .logo img {
+        height: 48px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero .tagline {
+        font-size: 1.2rem;
+    }
+
+    .tracks-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .enrollment-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+    }
+}
